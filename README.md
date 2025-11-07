@@ -12,6 +12,7 @@ The core of the project is a hybrid Convolutional Neural Network (CNN) and Recur
 The model was trained on the Common Voice dataset from Kaggle, using over 72,000+ cleaned audio clips (totaling over 400 hours of validated speech) to ensure high accuracy.
 
 🚀 Application Demo
+
 Here is the final Streamlit application in action, successfully predicting the gender and age group from an uploaded audio file.
 
 <img width="634" height="874" alt="image" src="https://github.com/user-attachments/assets/f65c7431-2ac0-4319-acb2-9dc76330fe7c" />
