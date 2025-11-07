@@ -1,4 +1,4 @@
-# 🎙️Voice-Based_Gender-Age_Detection
+# 🎙️Voice-Based Gender & Age_Detection using CNN & RNN
 This repository contains a deep learning project that classifies a speaker's gender and age group from a raw audio file.
 
 📝 Project Description
