@@ -1,14 +1,14 @@
-# 🎙️Voice-Based Gender & Age_Detection using CNN & RNN
-This repository contains a deep learning project that classifies a speaker's gender and age group from a raw audio file.
+# 🎙️Voice-Based Gender & Age Detection using CNN & RNN
+This document contains a deep learning project that classifies a speaker's gender and age group from a raw audio file.
 
 📝 Project Description
 The goal of this project was to build, train, and deploy a complete deep learning application. The final product is an interactive web app that can accept either a live 5-second microphone recording or an uploaded audio file (.mp3 or .wav) and instantly predict the speaker's gender and age category.
 
 The core of the project is a hybrid Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN).
-The CNN scans the audio's spectrogram (an image of the sound) to find spatial features and patterns.
-The RNN then analyzes the sequence of those patterns over time to understand the temporal context of the speech.
+- The CNN scans the audio's spectrogram (an image of the sound) to find spatial features and patterns.
+- The RNN then analyzes the sequence of those patterns over time to understand the temporal context of the speech.
 
-The model was trained on the Common Voice dataset from Kaggle, using over 72,000+ cleaned audio clips (totaling over 400 hours of validated speech and over 72000 audio files) to ensure high accuracy.
+The model was trained on the Common Voice dataset from Kaggle, using over 72,000+ cleaned audio clips (totaling over 400 hours of validated speech) to ensure high accuracy.
 
 🚀 Application Demo
 Here is the final Streamlit application in action, successfully predicting the gender and age group from an uploaded audio file.
@@ -38,7 +38,6 @@ Kaggle Notebooks (GPU): Trained the model using a free NVIDIA P100 GPU to comple
 
 <img width="538" height="702" alt="image" src="https://github.com/user-attachments/assets/983ec630-866e-40f2-9e54-3b616db5a08b" />
 <img width="1135" height="725" alt="image" src="https://github.com/user-attachments/assets/c2e19a4c-1724-4853-b0c1-3419856359bf" />
-
 
 TensorFlow (Keras): Used to:
 Define the DataGenerator to feed the 72,000+ .npy files to the model in small batches (to save RAM).
