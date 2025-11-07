@@ -1,7 +1,7 @@
 # 🎙️Voice-Based Gender & Age Detection using CNN & RNN
 This document contains a deep learning project that classifies a speaker's gender and age group from a raw audio file.
 
-                                                                          📝 Project Description
+📝 Project Description
 
 The goal of this project was to build, train, and deploy a complete deep learning application. The final product is an interactive web app that can accept either a live 5-second microphone recording or an uploaded audio file (.mp3 or .wav) and instantly predict the speaker's gender and age category.
 
