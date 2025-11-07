@@ -1,17 +1,14 @@
 # 🎙️Voice-Based_Gender-Age_Detection
 This repository contains a deep learning project that classifies a speaker's gender and age group from a raw audio file.
 
-
 📝 Project Description
 The goal of this project was to build, train, and deploy a complete deep learning application. The final product is an interactive web app that can accept either a live 5-second microphone recording or an uploaded audio file (.mp3 or .wav) and instantly predict the speaker's gender and age category.
 
-The core of the project is a hybrid Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) model.
-
+The core of the project is a hybrid Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN).
 The CNN scans the audio's spectrogram (an image of the sound) to find spatial features and patterns.
+The RNN then analyzes the sequence of those patterns over time to understand the temporal context of the speech.
 
-The LSTM then analyzes the sequence of those patterns over time to understand the temporal context of the speech.
-
-The model was trained on the Common Voice dataset from Kaggle, using over 72,000+ cleaned audio clips (totaling over 400 hours of validated speech) to ensure high accuracy.
+The model was trained on the Common Voice dataset from Kaggle, using over 72,000+ cleaned audio clips (totaling over 400 hours of validated speech and over 72000 audio files) to ensure high accuracy.
 
 🚀 Application Demo
 Here is the final Streamlit application in action, successfully predicting the gender and age group from an uploaded audio file.
@@ -45,10 +42,11 @@ Kaggle Notebooks (GPU): Trained the model using a free NVIDIA P100 GPU to comple
 
 TensorFlow (Keras): Used to:
 Define the DataGenerator to feed the 72,000+ .npy files to the model in small batches (to save RAM).
-Build the hybrid CNN+LSTM model architecture.
+Build the hybrid CNN+RNN model architecture.
 Train the model.
 Use ModelCheckpoint and EarlyStopping callbacks to save the best-performing model (best_voice_model.h5).
 scikit-learn: Used to LabelEncoder (to convert text labels like 'female' or 'twenties' into numbers) and to calculate class_weight to handle the imbalanced dataset (e.g., more '20s' voices than '60s').
+
 
 3. Application (Main.py)
 - Streamlit: Used to build the entire interactive web application and user interface.
