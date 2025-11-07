@@ -45,8 +45,6 @@ This project was built in three main parts: preprocessing, training, and deploym
     - scikit-learn: Used to LabelEncoder (to convert text labels like 'female' or 'twenties' into numbers) and to calculate class_weight to handle the imbalanced dataset (e.g., more '20s' voices than '60s').
       
 **3. Main Application (Main.py)**
-
-  Kaggle Notebooks (GPU): Trained the model using a free NVIDIA P100 GPU to complete the training in ~1-3 hours instead of 20-40+ hours.
   
   - Streamlit: Used to build the entire interactive web application and user interface.
   - SpeechRecognition: Used to capture live audio from the user's microphone for the "Speak & Analyze" feature.
