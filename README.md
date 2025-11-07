@@ -18,7 +18,7 @@ Here is the final Streamlit application in action, successfully predicting the g
 🛠️ Tools, Libraries & Workflow
 This project was built in three main parts: preprocessing, training, and deployment.
 
-1. Preprocessing (t1.py)
+**1. Preprocessing (t1.py)**
 
 <img width="1108" height="695" alt="image" src="https://github.com/user-attachments/assets/38a1a532-cfe7-435c-b15f-3c932c3809bb" />
 <img width="813" height="714" alt="image" src="https://github.com/user-attachments/assets/6c238f7b-d9c3-40d3-852a-b2433f49bd02" />
@@ -33,7 +33,7 @@ Normalizing audio to fix "feeble" or quiet recordings.
 Extracting MFCC (Mel-Frequency Cepstral Coefficients) features.
 NumPy: Used to save each processed file as a separate, small .npy file to create a memory-efficient "data generator" pipeline.
 
-2. Model Training (training.py)
+**2. Model Training (training.py)**
 
 <img width="538" height="702" alt="image" src="https://github.com/user-attachments/assets/983ec630-866e-40f2-9e54-3b616db5a08b" />
 <img width="1135" height="725" alt="image" src="https://github.com/user-attachments/assets/c2e19a4c-1724-4853-b0c1-3419856359bf" />
@@ -45,7 +45,8 @@ TensorFlow (Keras): Used to:
 - Use ModelCheckpoint and EarlyStopping callbacks to save the best-performing model (best_voice_model.h5).
 - scikit-learn: Used to LabelEncoder (to convert text labels like 'female' or 'twenties' into numbers) and to calculate class_weight to handle the imbalanced dataset (e.g., more '20s' voices than '60s').
   
-3. Main Application (Main.py)
+**3. Main Application (Main.py)**
+
 Kaggle Notebooks (GPU): Trained the model using a free NVIDIA P100 GPU to complete the training in ~1-3 hours instead of 20-40+ hours.
 
 - Streamlit: Used to build the entire interactive web application and user interface.
