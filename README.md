@@ -52,4 +52,6 @@ This project was built in three main parts: preprocessing, training, and deploym
   - SpeechRecognition: Used to capture live audio from the user's microphone for the "Speak & Analyze" feature.
   - Librosa/Pydub/TensorFlow: Used within the app to run the exact same preprocessing (MP3 conversion, 5-second padding, normalization, MFCCs) on new, incoming audio before feeding it to the loaded best_voice_model.h5 for a prediction.
   
-<img width="896" height="768" alt="image" src="https://github.com/user-attachments/assets/b4da7999-d2de-4c5c-b488-72859af2f4a2" />
+<img width="620" height="567" alt="image" src="https://github.com/user-attachments/assets/43ab2215-2c2f-4657-974f-d85086a66e17" />
+<img width="630" height="724" alt="image" src="https://github.com/user-attachments/assets/e3e7ffc9-e57b-4c43-8861-86d3e019627b" />
+
