@@ -15,7 +15,8 @@ The model was trained on the Common Voice dataset from Kaggle, using over 72,000
 
 Here is the final Streamlit application in action, successfully predicting the gender and age group from an uploaded audio file.
 
-<img width="634" height="874" alt="image" src="https://github.com/user-attachments/assets/f65c7431-2ac0-4319-acb2-9dc76330fe7c" />
+<img width="620" height="567" alt="image" src="https://github.com/user-attachments/assets/2679dad9-4ea0-4efd-a792-45b51cf17237" />
+
 
 🛠️ Tools, Libraries & Workflow
 This project was built in three main parts: preprocessing, training, and deployment.
@@ -53,5 +54,6 @@ This project was built in three main parts: preprocessing, training, and deploym
   - Librosa/Pydub/TensorFlow: Used within the app to run the exact same preprocessing (MP3 conversion, 5-second padding, normalization, MFCCs) on new, incoming audio before feeding it to the loaded best_voice_model.h5 for a prediction.
   
 <img width="620" height="567" alt="image" src="https://github.com/user-attachments/assets/43ab2215-2c2f-4657-974f-d85086a66e17" />
+
 <img width="630" height="724" alt="image" src="https://github.com/user-attachments/assets/e3e7ffc9-e57b-4c43-8861-86d3e019627b" />
 
